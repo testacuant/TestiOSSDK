@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13750BB62125FC35009B29AA /* ClassificationErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13750BB52125FC35009B29AA /* ClassificationErrorViewController.swift */; };
+		138EA90320F7BF9B002FC333 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EA90220F7BF9B002FC333 /* ResultViewController.swift */; };
+		138EA90520F7CFC9002FC333 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EA90420F7CFC9002FC333 /* Utils.swift */; };
+		13AC65DC20EE8F8F00F0D494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC65DB20EE8F8F00F0D494 /* AppDelegate.swift */; };
+		13AC65DE20EE8F8F00F0D494 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC65DD20EE8F8F00F0D494 /* RootViewController.swift */; };
+		13AC65E120EE8F8F00F0D494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AC65DF20EE8F8F00F0D494 /* Main.storyboard */; };
+		13AC65E320EE8F9000F0D494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AC65E220EE8F9000F0D494 /* Assets.xcassets */; };
+		13AC65E620EE8F9000F0D494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AC65E420EE8F9000F0D494 /* LaunchScreen.storyboard */; };
+		13AC66BC20EECE0400F0D494 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC66BB20EECE0400F0D494 /* ViewControllerUtils.swift */; };
+		13AC66BE20EED36D00F0D494 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC66BD20EED36D00F0D494 /* CustomAlert.swift */; };
+		13D13F1420F6AC000052B1D7 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D13F1320F6AC000052B1D7 /* ConfirmationViewController.swift */; };
+		C229E7B62224520700FFAC6F /* AcuantConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C229E7B52224520700FFAC6F /* AcuantConfig.plist */; };
+		C2D35E2222397A7D00B84526 /* AcuantCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0622397A6800B84526 /* AcuantCommon.framework */; };
+		C2D35E2322397A7D00B84526 /* AcuantCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0622397A6800B84526 /* AcuantCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2422397A7D00B84526 /* AcuantDocumentProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0B22397A6800B84526 /* AcuantDocumentProcessing.framework */; };
+		C2D35E2522397A7D00B84526 /* AcuantDocumentProcessing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0B22397A6800B84526 /* AcuantDocumentProcessing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2622397A7D00B84526 /* AcuantFaceMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0922397A6800B84526 /* AcuantFaceMatch.framework */; };
+		C2D35E2722397A7D00B84526 /* AcuantFaceMatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0922397A6800B84526 /* AcuantFaceMatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2822397A7D00B84526 /* AcuantHGLiveliness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1022397A6800B84526 /* AcuantHGLiveliness.framework */; };
+		C2D35E2922397A7D00B84526 /* AcuantHGLiveliness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1022397A6800B84526 /* AcuantHGLiveliness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2A22397A7D00B84526 /* AcuantImagePreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0E22397A6800B84526 /* AcuantImagePreparation.framework */; };
+		C2D35E2B22397A7D00B84526 /* AcuantImagePreparation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0E22397A6800B84526 /* AcuantImagePreparation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2C22397A7D00B84526 /* AcuantIPLiveliness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1222397A6800B84526 /* AcuantIPLiveliness.framework */; };
+		C2D35E2D22397A7D00B84526 /* AcuantIPLiveliness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1222397A6800B84526 /* AcuantIPLiveliness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E2E22397A7D00B84526 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0D22397A6800B84526 /* Alamofire.framework */; };
+		C2D35E2F22397A7D00B84526 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0D22397A6800B84526 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3022397A7D00B84526 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0F22397A6800B84526 /* AlamofireImage.framework */; };
+		C2D35E3122397A7D00B84526 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0F22397A6800B84526 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3222397A7D00B84526 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0422397A6800B84526 /* CocoaAsyncSocket.framework */; };
+		C2D35E3322397A7D00B84526 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0422397A6800B84526 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3422397A7D00B84526 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0722397A6800B84526 /* GPUImage.framework */; };
+		C2D35E3522397A7D00B84526 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0722397A6800B84526 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3622397A7D00B84526 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0822397A6800B84526 /* GZIP.framework */; };
+		C2D35E3722397A7D00B84526 /* GZIP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0822397A6800B84526 /* GZIP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3822397A7D00B84526 /* iProov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0522397A6800B84526 /* iProov.framework */; };
+		C2D35E3922397A7D00B84526 /* iProov.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0522397A6800B84526 /* iProov.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3A22397A7D00B84526 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0A22397A6800B84526 /* KeychainAccess.framework */; };
+		C2D35E3B22397A7D00B84526 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0A22397A6800B84526 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3C22397A7D00B84526 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1122397A6800B84526 /* MBProgressHUD.framework */; };
+		C2D35E3D22397A7D00B84526 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E1122397A6800B84526 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E3E22397A7D00B84526 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0C22397A6800B84526 /* SocketIO.framework */; };
+		C2D35E3F22397A7D00B84526 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35E0C22397A6800B84526 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D35E4022397A7D00B84526 /* AcuantCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35DF82239799D00B84526 /* AcuantCamera.framework */; };
+		C2D35E4122397A7D00B84526 /* AcuantCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2D35DF82239799D00B84526 /* AcuantCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2F69D472225B40700724EDB /* FaceLivelinessCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F69D3F2225B40700724EDB /* FaceLivelinessCameraController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2D35DF72239799D00B84526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D35DF32239799D00B84526 /* AcuantCamera.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134F59D221FA0BA600CEDBFC;
+			remoteInfo = AcuantCamera;
+		};
+		C2D35E4222397A7E00B84526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D35DF32239799D00B84526 /* AcuantCamera.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 134F59D121FA0BA600CEDBFC;
+			remoteInfo = AcuantCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2D35DED223978FB00B84526 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C2D35E3322397A7D00B84526 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				C2D35E3522397A7D00B84526 /* GPUImage.framework in Embed Frameworks */,
+				C2D35E2522397A7D00B84526 /* AcuantDocumentProcessing.framework in Embed Frameworks */,
+				C2D35E3F22397A7D00B84526 /* SocketIO.framework in Embed Frameworks */,
+				C2D35E3922397A7D00B84526 /* iProov.framework in Embed Frameworks */,
+				C2D35E2922397A7D00B84526 /* AcuantHGLiveliness.framework in Embed Frameworks */,
+				C2D35E3722397A7D00B84526 /* GZIP.framework in Embed Frameworks */,
+				C2D35E4122397A7D00B84526 /* AcuantCamera.framework in Embed Frameworks */,
+				C2D35E2722397A7D00B84526 /* AcuantFaceMatch.framework in Embed Frameworks */,
+				C2D35E2B22397A7D00B84526 /* AcuantImagePreparation.framework in Embed Frameworks */,
+				C2D35E3D22397A7D00B84526 /* MBProgressHUD.framework in Embed Frameworks */,
+				C2D35E3B22397A7D00B84526 /* KeychainAccess.framework in Embed Frameworks */,
+				C2D35E2F22397A7D00B84526 /* Alamofire.framework in Embed Frameworks */,
+				C2D35E2322397A7D00B84526 /* AcuantCommon.framework in Embed Frameworks */,
+				C2D35E2D22397A7D00B84526 /* AcuantIPLiveliness.framework in Embed Frameworks */,
+				C2D35E3122397A7D00B84526 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13750BB52125FC35009B29AA /* ClassificationErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationErrorViewController.swift; sourceTree = "<group>"; };
+		138EA90220F7BF9B002FC333 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		138EA90420F7CFC9002FC333 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		13AC65D820EE8F8F00F0D494 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AC65DB20EE8F8F00F0D494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13AC65DD20EE8F8F00F0D494 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		13AC65E020EE8F8F00F0D494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13AC65E220EE8F9000F0D494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13AC65E520EE8F9000F0D494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13AC65E720EE8F9000F0D494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AC66BB20EECE0400F0D494 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		13AC66BD20EED36D00F0D494 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		13D13F1320F6AC000052B1D7 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		C229E7B52224520700FFAC6F /* AcuantConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AcuantConfig.plist; sourceTree = "<group>"; };
+		C2D35DF32239799D00B84526 /* AcuantCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AcuantCamera.xcodeproj; path = ../AcuantCamera/AcuantCamera.xcodeproj; sourceTree = "<group>"; };
+		C2D35E0422397A6800B84526 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../EmbeddedFrameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		C2D35E0522397A6800B84526 /* iProov.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iProov.framework; path = ../EmbeddedFrameworks/iProov.framework; sourceTree = "<group>"; };
+		C2D35E0622397A6800B84526 /* AcuantCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantCommon.framework; path = ../EmbeddedFrameworks/AcuantCommon.framework; sourceTree = "<group>"; };
+		C2D35E0722397A6800B84526 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = ../EmbeddedFrameworks/GPUImage.framework; sourceTree = "<group>"; };
+		C2D35E0822397A6800B84526 /* GZIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GZIP.framework; path = ../EmbeddedFrameworks/GZIP.framework; sourceTree = "<group>"; };
+		C2D35E0922397A6800B84526 /* AcuantFaceMatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantFaceMatch.framework; path = ../EmbeddedFrameworks/AcuantFaceMatch.framework; sourceTree = "<group>"; };
+		C2D35E0A22397A6800B84526 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = ../EmbeddedFrameworks/KeychainAccess.framework; sourceTree = "<group>"; };
+		C2D35E0B22397A6800B84526 /* AcuantDocumentProcessing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantDocumentProcessing.framework; path = ../EmbeddedFrameworks/AcuantDocumentProcessing.framework; sourceTree = "<group>"; };
+		C2D35E0C22397A6800B84526 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = ../EmbeddedFrameworks/SocketIO.framework; sourceTree = "<group>"; };
+		C2D35E0D22397A6800B84526 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../EmbeddedFrameworks/Alamofire.framework; sourceTree = "<group>"; };
+		C2D35E0E22397A6800B84526 /* AcuantImagePreparation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantImagePreparation.framework; path = ../EmbeddedFrameworks/AcuantImagePreparation.framework; sourceTree = "<group>"; };
+		C2D35E0F22397A6800B84526 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = ../EmbeddedFrameworks/AlamofireImage.framework; sourceTree = "<group>"; };
+		C2D35E1022397A6800B84526 /* AcuantHGLiveliness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantHGLiveliness.framework; path = ../EmbeddedFrameworks/AcuantHGLiveliness.framework; sourceTree = "<group>"; };
+		C2D35E1122397A6800B84526 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = ../EmbeddedFrameworks/MBProgressHUD.framework; sourceTree = "<group>"; };
+		C2D35E1222397A6800B84526 /* AcuantIPLiveliness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AcuantIPLiveliness.framework; path = ../EmbeddedFrameworks/AcuantIPLiveliness.framework; sourceTree = "<group>"; };
+		C2F69D3F2225B40700724EDB /* FaceLivelinessCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceLivelinessCameraController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13AC65D520EE8F8F00F0D494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D35E3222397A7D00B84526 /* CocoaAsyncSocket.framework in Frameworks */,
+				C2D35E3422397A7D00B84526 /* GPUImage.framework in Frameworks */,
+				C2D35E2422397A7D00B84526 /* AcuantDocumentProcessing.framework in Frameworks */,
+				C2D35E3E22397A7D00B84526 /* SocketIO.framework in Frameworks */,
+				C2D35E3822397A7D00B84526 /* iProov.framework in Frameworks */,
+				C2D35E2822397A7D00B84526 /* AcuantHGLiveliness.framework in Frameworks */,
+				C2D35E3622397A7D00B84526 /* GZIP.framework in Frameworks */,
+				C2D35E4022397A7D00B84526 /* AcuantCamera.framework in Frameworks */,
+				C2D35E2622397A7D00B84526 /* AcuantFaceMatch.framework in Frameworks */,
+				C2D35E2A22397A7D00B84526 /* AcuantImagePreparation.framework in Frameworks */,
+				C2D35E3C22397A7D00B84526 /* MBProgressHUD.framework in Frameworks */,
+				C2D35E3A22397A7D00B84526 /* KeychainAccess.framework in Frameworks */,
+				C2D35E2E22397A7D00B84526 /* Alamofire.framework in Frameworks */,
+				C2D35E2222397A7D00B84526 /* AcuantCommon.framework in Frameworks */,
+				C2D35E2C22397A7D00B84526 /* AcuantIPLiveliness.framework in Frameworks */,
+				C2D35E3022397A7D00B84526 /* AlamofireImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AC65CF20EE8F8F00F0D494 = {
+			isa = PBXGroup;
+			children = (
+				13AC65DA20EE8F8F00F0D494 /* SampleApp */,
+				13AC65D920EE8F8F00F0D494 /* Products */,
+				13AC662620EE954900F0D494 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13AC65D920EE8F8F00F0D494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13AC65D820EE8F8F00F0D494 /* SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13AC65DA20EE8F8F00F0D494 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C2F69D3F2225B40700724EDB /* FaceLivelinessCameraController.swift */,
+				13AC65DB20EE8F8F00F0D494 /* AppDelegate.swift */,
+				13AC65DD20EE8F8F00F0D494 /* RootViewController.swift */,
+				13AC65DF20EE8F8F00F0D494 /* Main.storyboard */,
+				13AC65E220EE8F9000F0D494 /* Assets.xcassets */,
+				13AC65E420EE8F9000F0D494 /* LaunchScreen.storyboard */,
+				13AC65E720EE8F9000F0D494 /* Info.plist */,
+				13AC66BB20EECE0400F0D494 /* ViewControllerUtils.swift */,
+				13AC66BD20EED36D00F0D494 /* CustomAlert.swift */,
+				13D13F1320F6AC000052B1D7 /* ConfirmationViewController.swift */,
+				138EA90220F7BF9B002FC333 /* ResultViewController.swift */,
+				138EA90420F7CFC9002FC333 /* Utils.swift */,
+				13750BB52125FC35009B29AA /* ClassificationErrorViewController.swift */,
+				C229E7B52224520700FFAC6F /* AcuantConfig.plist */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		13AC662620EE954900F0D494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D35E0622397A6800B84526 /* AcuantCommon.framework */,
+				C2D35E0B22397A6800B84526 /* AcuantDocumentProcessing.framework */,
+				C2D35E0922397A6800B84526 /* AcuantFaceMatch.framework */,
+				C2D35E1022397A6800B84526 /* AcuantHGLiveliness.framework */,
+				C2D35E0E22397A6800B84526 /* AcuantImagePreparation.framework */,
+				C2D35E1222397A6800B84526 /* AcuantIPLiveliness.framework */,
+				C2D35E0D22397A6800B84526 /* Alamofire.framework */,
+				C2D35E0F22397A6800B84526 /* AlamofireImage.framework */,
+				C2D35E0422397A6800B84526 /* CocoaAsyncSocket.framework */,
+				C2D35E0722397A6800B84526 /* GPUImage.framework */,
+				C2D35E0822397A6800B84526 /* GZIP.framework */,
+				C2D35E0522397A6800B84526 /* iProov.framework */,
+				C2D35E0A22397A6800B84526 /* KeychainAccess.framework */,
+				C2D35E1122397A6800B84526 /* MBProgressHUD.framework */,
+				C2D35E0C22397A6800B84526 /* SocketIO.framework */,
+				C2D35DF32239799D00B84526 /* AcuantCamera.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D35DF42239799D00B84526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D35DF82239799D00B84526 /* AcuantCamera.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13AC65D720EE8F8F00F0D494 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AC660020EE8F9000F0D494 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				13AC65D420EE8F8F00F0D494 /* Sources */,
+				13AC65D520EE8F8F00F0D494 /* Frameworks */,
+				13AC65D620EE8F8F00F0D494 /* Resources */,
+				C2D35DED223978FB00B84526 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D35E4322397A7E00B84526 /* PBXTargetDependency */,
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = 13AC65D820EE8F8F00F0D494 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13AC65D020EE8F8F00F0D494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = com.acuant;
+				TargetAttributes = {
+					13AC65D720EE8F8F00F0D494 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 13AC65D320EE8F8F00F0D494 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13AC65CF20EE8F8F00F0D494;
+			productRefGroup = 13AC65D920EE8F8F00F0D494 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C2D35DF42239799D00B84526 /* Products */;
+					ProjectRef = C2D35DF32239799D00B84526 /* AcuantCamera.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13AC65D720EE8F8F00F0D494 /* SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C2D35DF82239799D00B84526 /* AcuantCamera.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AcuantCamera.framework;
+			remoteRef = C2D35DF72239799D00B84526 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13AC65D620EE8F8F00F0D494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C229E7B62224520700FFAC6F /* AcuantConfig.plist in Resources */,
+				13AC65E620EE8F9000F0D494 /* LaunchScreen.storyboard in Resources */,
+				13AC65E320EE8F9000F0D494 /* Assets.xcassets in Resources */,
+				13AC65E120EE8F8F00F0D494 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13AC65D420EE8F8F00F0D494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D13F1420F6AC000052B1D7 /* ConfirmationViewController.swift in Sources */,
+				138EA90520F7CFC9002FC333 /* Utils.swift in Sources */,
+				13750BB62125FC35009B29AA /* ClassificationErrorViewController.swift in Sources */,
+				13AC65DE20EE8F8F00F0D494 /* RootViewController.swift in Sources */,
+				138EA90320F7BF9B002FC333 /* ResultViewController.swift in Sources */,
+				13AC65DC20EE8F8F00F0D494 /* AppDelegate.swift in Sources */,
+				13AC66BC20EECE0400F0D494 /* ViewControllerUtils.swift in Sources */,
+				13AC66BE20EED36D00F0D494 /* CustomAlert.swift in Sources */,
+				C2F69D472225B40700724EDB /* FaceLivelinessCameraController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2D35E4322397A7E00B84526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AcuantCamera;
+			targetProxy = C2D35E4222397A7E00B84526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13AC65DF20EE8F8F00F0D494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13AC65E020EE8F8F00F0D494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13AC65E420EE8F9000F0D494 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13AC65E520EE8F9000F0D494 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13AC65FE20EE8F9000F0D494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13AC65FF20EE8F9000F0D494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13AC660120EE8F9000F0D494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E67326HC5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp",
+					"$(PROJECT_DIR)/../EmbeddedFrameworks/**",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cssn.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13AC660220EE8F9000F0D494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E67326HC5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp",
+					"$(PROJECT_DIR)/../EmbeddedFrameworks/**",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cssn.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13AC65D320EE8F8F00F0D494 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AC65FE20EE8F9000F0D494 /* Debug */,
+				13AC65FF20EE8F9000F0D494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AC660020EE8F9000F0D494 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AC660120EE8F9000F0D494 /* Debug */,
+				13AC660220EE8F9000F0D494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13AC65D020EE8F8F00F0D494 /* Project object */;
+}
